@@ -1,0 +1,12 @@
+server.port:
+  4546
+spring.cloud.stream:
+  function:
+    definition: processor;consumer
+  bindings:
+    processor-in-0:
+      destination: sending
+    processor-out-0:
+      destination: receiving
+    consumer-in-0:
+      destination: receiving

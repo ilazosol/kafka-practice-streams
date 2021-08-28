@@ -1,0 +1,8 @@
+server.port:
+  4545
+spring.cloud.stream:
+  function:
+    definition: producer
+  bindings:
+    producer-out-0:
+      destination: sending
